@@ -1,0 +1,12 @@
+client->server: HTTP GET https://fullstack-exampleapp.herokuapp.com/spa
+server-->client: HTML
+client->server: HTTP GET https://fullstack-exampleapp.herokuapp.com/spa.js
+server-->client: spa.js
+client->server: HTTP GET https://fullstack-exampleapp.herokuapp.com/main.css
+server-->client: main.css
+client->server: HTTP GET https://fullstack-exampleapp.herokuapp.com/data.json
+server-->client: JSON
+
+note over client:
+client renderes notes from JSON file
+end note over

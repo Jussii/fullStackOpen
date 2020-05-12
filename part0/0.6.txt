@@ -1,0 +1,6 @@
+client->server: HTTP POST https://fullstack-exampleapp.herokuapp.com/new_note_spa
+
+note over client:
+client sends new note to server over HTTP POST
+and renders new note
+end note over

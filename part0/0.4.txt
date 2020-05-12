@@ -1,0 +1,26 @@
+title Untitled
+
+client->server: HTTP POST https://fullstack-exampleapp.herokuapp.com/new_note
+
+note over client:
+Client sends server text that was on the form over HTTP POST
+to https://fullstack-exampleapp.herokuapp.com/new_note
+end note
+
+client->server: HTTP GET https://fullstack-exampleapp.herokuapp.com/notes
+server-->client: HTML
+client->server: HTTP GET https://fullstack-exampleapp.herokuapp.com/main.css
+server-->client: main.css
+client->server: HTTP GET https://fullstack-exampleapp.herokuapp.com/main.js
+server-->client: main.js
+
+note over client:
+client starts to run javascript that asks for JSON data from server
+end note
+
+client->server: HTTP GET https://fullstack-exampleapp.herokuapp.com/data.json
+server-->client: JSON
+
+note over client:
+client renderes notes from JSON file
+end note
