@@ -25,7 +25,7 @@ const App = ({ anecdotes }) => {
     const result = anecdotes[indexOfMaxValue];
     return result;
   };
-
+  console.log("boi");
   return (
     <div>
       <h1>Anecdote of the day</h1>
