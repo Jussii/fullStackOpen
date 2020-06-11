@@ -9,6 +9,7 @@ const Persons = (props) => {
   );
 
   const deletePerson = (id) => {
+    console.log(id);
     if (window.confirm("Do you really want to delete"))
       personsService.del(id).then((returnedPerson) => {
         const temp = persons.filter((item) => item.id !== id);
